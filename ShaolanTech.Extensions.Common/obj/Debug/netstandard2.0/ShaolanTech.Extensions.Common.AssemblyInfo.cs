@@ -11,14 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ShaolanTech")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ShaolanTech.Extensions.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyCopyrightAttribute("CopyRight @ ShaolanTech")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("ShaolanTech base models")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ShaolanTech.BaseModels")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ShaolanTech.BaseModels")]
+[assembly: System.Reflection.AssemblyProductAttribute("ShaolanTech.Extensions.Common")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ShaolanTech.Extensions.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
