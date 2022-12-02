@@ -1,0 +1,15 @@
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Web.deps.json
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Web.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Web.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.BaseModels.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Common.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Common.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\bin\Debug\netstandard2.0\ShaolanTech.BaseModels.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.csproj.AssemblyReference.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.GeneratedMSBuildEditorConfig.editorconfig
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.AssemblyInfoInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.AssemblyInfo.cs
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.csproj.CoreCompileInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.csproj.CopyComplete
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Web\obj\Debug\netstandard2.0\ShaolanTech.Extensions.Web.pdb

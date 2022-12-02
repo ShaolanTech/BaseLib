@@ -1,0 +1,10 @@
+f:\work\shaolantech\baselib\packages\ShaolanTech.Extensions.Common.dll
+f:\work\shaolantech\baselib\packages\ShaolanTech.Extensions.Common.deps.json
+f:\work\shaolantech\baselib\packages\ShaolanTech.Extensions.Common.pdb
+f:\work\shaolantech\baselib\packages\Newtonsoft.Json.dll
+f:\work\shaolantech\baselib\packages\System.Buffers.dll
+f:\work\shaolantech\baselib\packages\System.Memory.dll
+f:\work\shaolantech\baselib\packages\System.Numerics.Vectors.dll
+f:\work\shaolantech\baselib\packages\System.Runtime.CompilerServices.Unsafe.dll
+f:\work\shaolantech\baselib\packages\ShaolanTech.BaseModels.dll
+f:\work\shaolantech\baselib\packages\ShaolanTech.BaseModels.pdb

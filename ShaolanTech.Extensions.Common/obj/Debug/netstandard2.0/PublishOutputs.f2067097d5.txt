@@ -1,0 +1,10 @@
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\ShaolanTech.Extensions.Common.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\ShaolanTech.Extensions.Common.deps.json
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\ShaolanTech.Extensions.Common.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\Newtonsoft.Json.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\System.Buffers.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\System.Memory.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\System.Numerics.Vectors.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\System.Runtime.CompilerServices.Unsafe.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\ShaolanTech.BaseModels.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Extensions.Common\bin\Debug\netstandard2.0\publish\ShaolanTech.BaseModels.pdb

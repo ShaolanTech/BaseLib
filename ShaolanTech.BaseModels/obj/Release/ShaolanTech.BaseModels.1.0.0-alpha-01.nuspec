@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ShaolanTech.BaseModels</id>
+    <version>1.0.0-alpha-01</version>
+    <title>ShaolanTech.BaseModel</title>
+    <authors>ShaolanTech</authors>
+    <description>ShaolanTech base models</description>
+    <copyright>CopyRight @ ShaolanTech</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Release\netstandard2.0\ShaolanTech.BaseModels.dll" target="lib\netstandard2.0\ShaolanTech.BaseModels.dll" />
+  </files>
+</package>

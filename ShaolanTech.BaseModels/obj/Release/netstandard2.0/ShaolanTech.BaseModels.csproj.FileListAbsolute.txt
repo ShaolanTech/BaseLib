@@ -1,0 +1,10 @@
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Release\netstandard2.0\ShaolanTech.BaseModels.deps.json
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Release\netstandard2.0\ShaolanTech.BaseModels.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Release\netstandard2.0\ShaolanTech.BaseModels.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.csproj.AssemblyReference.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.AssemblyInfoInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.AssemblyInfo.cs
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.csproj.CoreCompileInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\obj\Release\netstandard2.0\ShaolanTech.BaseModels.pdb

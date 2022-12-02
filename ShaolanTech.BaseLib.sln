@@ -10,7 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaolanTech.Extensions.Common", "ShaolanTech.Extensions.Common\ShaolanTech.Extensions.Common.csproj", "{D48C6572-708C-4DB4-A44E-5B7A43190A5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShaolanTech.Extensions.Common", "ShaolanTech.Extensions.Common\ShaolanTech.Extensions.Common.csproj", "{D48C6572-708C-4DB4-A44E-5B7A43190A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{AE1E3729-E724-4557-AD48-EF4ECA3303C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShaolanTech.Extensions.Web", "ShaolanTech.Extensions.Web\ShaolanTech.Extensions.Web.csproj", "{328D9AA7-4C2E-4CEB-A59A-7432A5933951}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShaolanTech.Threading", "ShaolanTech.Threading\ShaolanTech.Threading.csproj", "{6141B703-96C3-4883-85BC-539811A2CD99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +32,22 @@ Global
 		{D48C6572-708C-4DB4-A44E-5B7A43190A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D48C6572-708C-4DB4-A44E-5B7A43190A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D48C6572-708C-4DB4-A44E-5B7A43190A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328D9AA7-4C2E-4CEB-A59A-7432A5933951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328D9AA7-4C2E-4CEB-A59A-7432A5933951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328D9AA7-4C2E-4CEB-A59A-7432A5933951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328D9AA7-4C2E-4CEB-A59A-7432A5933951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6141B703-96C3-4883-85BC-539811A2CD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6141B703-96C3-4883-85BC-539811A2CD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6141B703-96C3-4883-85BC-539811A2CD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6141B703-96C3-4883-85BC-539811A2CD99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D48C6572-708C-4DB4-A44E-5B7A43190A5A} = {AE1E3729-E724-4557-AD48-EF4ECA3303C0}
+		{328D9AA7-4C2E-4CEB-A59A-7432A5933951} = {AE1E3729-E724-4557-AD48-EF4ECA3303C0}
+		{6141B703-96C3-4883-85BC-539811A2CD99} = {AE1E3729-E724-4557-AD48-EF4ECA3303C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BFF48BB3-1810-48E6-ABEA-7C987161117F}

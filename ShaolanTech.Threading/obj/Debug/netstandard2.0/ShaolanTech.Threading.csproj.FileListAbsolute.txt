@@ -1,0 +1,10 @@
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.Threading.deps.json
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.Threading.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.Threading.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.csproj.AssemblyReference.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.GeneratedMSBuildEditorConfig.editorconfig
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.AssemblyInfoInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.AssemblyInfo.cs
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.csproj.CoreCompileInputs.cache
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.pdb

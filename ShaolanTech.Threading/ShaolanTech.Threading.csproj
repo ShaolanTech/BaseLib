@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+	<PropertyGroup>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Title>ShaolanTech.Threading</Title>
+		<Authors>ShaolanTech</Authors>
+		<Company>ShaolanTech</Company>
+		<Description>ShaolanTech Threading Package</Description>
+		<Copyright>CopyRight @ ShaolanTech</Copyright>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+	</PropertyGroup>
+</Project>

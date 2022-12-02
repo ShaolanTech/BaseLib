@@ -1,13 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>ShaolanTech Base Models</Title>
-    <Authors>ShaolanTech</Authors>
-    <Company>ShaolanTech</Company>
-    <Description>ShaolanTech base models</Description>
-    <Copyright>CopyRight @ ShaolanTech</Copyright>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
 
+	</PropertyGroup>
+	<PropertyGroup>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Title>ShaolanTech.BaseModel</Title>
+		<Authors>ShaolanTech</Authors>
+		<Company>ShaolanTech</Company>
+		<Description>ShaolanTech base models</Description>
+		<Copyright>CopyRight @ ShaolanTech</Copyright>
+		
+	</PropertyGroup>
 </Project>

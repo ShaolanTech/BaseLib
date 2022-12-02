@@ -1,0 +1,3 @@
+f:\work\shaolantech\baselib\packages\ShaolanTech.BaseModels.dll
+f:\work\shaolantech\baselib\packages\ShaolanTech.BaseModels.deps.json
+f:\work\shaolantech\baselib\packages\ShaolanTech.BaseModels.pdb
