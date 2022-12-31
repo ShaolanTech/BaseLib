@@ -1,3 +1,0 @@
-F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Debug\netstandard2.0\publish\ShaolanTech.BaseModels.dll
-F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Debug\netstandard2.0\publish\ShaolanTech.BaseModels.deps.json
-F:\work\ShaolanTech\BaseLib\ShaolanTech.BaseModels\bin\Debug\netstandard2.0\publish\ShaolanTech.BaseModels.pdb
