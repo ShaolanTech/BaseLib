@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShaolanTech.BaseModels
+namespace ShaolanTech
 {
     /// <summary>
     /// 字符的ASCII码范围

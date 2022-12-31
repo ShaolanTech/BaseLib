@@ -1,10 +1,9 @@
-﻿using System;
+﻿using ShaolanTech;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Dynamic;
-using Warensoft.EntLib.Common;
 using System.Linq;
-using ShaolanTech.BaseModels;
 
 public static class ADOExtensions
 {

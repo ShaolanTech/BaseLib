@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.IO;
+//using System.Text.Json;
+using System.Linq;
 using System.Reflection;
 using System.Text;
-//using System.Text.Json;
-using Warensoft.EntLib.Common;
-using System.Linq;
-using System.IO;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json;
 /// <summary>
 /// 对象转化扩展函数类
 /// </summary>
@@ -110,7 +109,7 @@ public static class ObjectExtensions
 
         }
     }
-    
+
     /// <summary>
     /// 将JSON字符串转化为指定对象
     /// </summary>
@@ -132,39 +131,20 @@ public static class ObjectExtensions
         {
 
 
-        } 
+        }
         return result;
     }
-    public static string ToJsonString(this object obj, bool withOrder = false )
+    public static string ToJsonString(this object obj)
     {
-
-        if (!withOrder)
-        {
-            StringWriter wr = new StringWriter();
-            var jsonWriter = new JsonTextWriter(wr);
-            jsonWriter.StringEscapeHandling = StringEscapeHandling.EscapeHtml;
-            var js = new JsonSerializer();
-            js.DateFormatString = "yyyy-MM-dd HH:mm:ss";
-            js.NullValueHandling = NullValueHandling.Ignore;
-            js.Serialize(jsonWriter, obj);
-            var result = wr.ToString().Replace("\\u0000", "").Replace("'", "\\u0027");
-            return result;
-        }
-        else
-        {
-
-            TypeInfo info = obj.GetType().GetTypeInfo();
-            var properties = info.DeclaredProperties;
-            StringBuilder sb = new StringBuilder("{");
-            foreach (var property in properties.OrderBy(p => p.Name))
-            {
-                sb.Append("\"").Append(property.Name).Append("\":");
-                sb.Append("\"").Append(property.GetValue(obj)).Append("\",");
-            }
-            sb.RemoveLast().Append("}");
-            return sb.ToString();
-        }
-
+        StringWriter wr = new StringWriter();
+        var jsonWriter = new JsonTextWriter(wr);
+        jsonWriter.StringEscapeHandling = StringEscapeHandling.EscapeHtml;
+        var js = new JsonSerializer();
+        js.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+        js.NullValueHandling = NullValueHandling.Ignore;
+        js.Serialize(jsonWriter, obj);
+        var result = wr.ToString().Replace("\\u0000", "").Replace("'", "\\u0027");
+        return result;
     }
 
 

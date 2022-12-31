@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Warensoft.EntLib.Common
+namespace ShaolanTech
 {
     public class DebugTimer : IDisposable
     {

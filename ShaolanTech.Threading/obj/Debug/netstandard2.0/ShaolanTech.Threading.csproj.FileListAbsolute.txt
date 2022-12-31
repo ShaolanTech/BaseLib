@@ -8,3 +8,8 @@ F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\Shaol
 F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.csproj.CoreCompileInputs.cache
 F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.dll
 F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.BaseModels.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Common.dll
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.Extensions.Common.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\bin\Debug\netstandard2.0\ShaolanTech.BaseModels.pdb
+F:\work\ShaolanTech\BaseLib\ShaolanTech.Threading\obj\Debug\netstandard2.0\ShaolanTech.Threading.csproj.CopyComplete

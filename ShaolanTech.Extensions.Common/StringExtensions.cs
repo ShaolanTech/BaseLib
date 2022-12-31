@@ -1,15 +1,11 @@
-﻿using System;
+﻿using ShaolanTech;
+
+using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Collections.ObjectModel;
-using Warensoft.EntLib.Common;
-using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using System.IO;
-using ShaolanTech.BaseModels;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
 
 /// <summary>
 /// 字符串扩展函数
@@ -18,6 +14,7 @@ public static class StringExtensions
 {
     public static ReadOnlySpan<byte> ToReadOnlySpan(this string input)
     {
+        
         var buffer = Encoding.UTF8.GetBytes(input);
         return new ReadOnlySpan<byte>(buffer);
     }
@@ -103,23 +100,7 @@ public static class StringExtensions
         return new StringBuilder(s).Append(newContent);
     }
    
-   
-    public static IntPtr StringToHGlobalUTF8(string s, out int length)
-    {
-        if (s == null)
-        {
-            length = 0;
-            return IntPtr.Zero;
-        }
-
-        var bytes = Encoding.UTF8.GetBytes(s);
-        var ptr = Marshal.AllocHGlobal(bytes.Length + 1);
-        Marshal.Copy(bytes, 0, ptr, bytes.Length);
-        Marshal.WriteByte(ptr, bytes.Length, 0);
-        length = bytes.Length;
-
-        return ptr;
-    }
+    
     /// <summary>
     /// 获取当前字符串MD5后前15位表示的正长整数
     /// </summary>
@@ -134,22 +115,7 @@ public static class StringExtensions
         var id = (long)(System.Convert.ToUInt64($"0x{SecurityUtil.GetMD5String(s).Substring(0, 16)}", 16) >> 1);
         return id;
     }
-    /// <summary>
-    /// 获取字符串的MD5形式
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public static string GetMD5(this string s)
-    {
-        if (s.IsNullOrEmpty())
-        {
-            return "";
-        }
-        else
-        {
-            return SecurityUtil.GetMD5String(s);
-        }
-    }
+     
     /// <summary>
     /// 尝试将字符串转化为整型数
     /// </summary>
@@ -229,25 +195,8 @@ public static class StringExtensions
         bool.TryParse(s, out bool result);
         return result;
     }
-    /// <summary>
-    /// 返回英文单词向量的长度
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public static double GetVectorLength(this string s)
-    {
-        return Math.Sqrt(s.Sum(c => c * c));
-    }
-    /// <summary>
-    /// 生成Like SQL语句
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public static string ToSQLLike(this string s)
-    {
-        return "%" + s + "%";
-    }
-
+     
+    
 
     /// <summary>
     /// 当前字符串是否为NULL或空串
@@ -286,11 +235,7 @@ public static class StringExtensions
         }
         return notNullCallback();
     }
-    public static string FixSqlEqualsString(this string s)
-    {
-        return s.Replace("'", "''").Replace("(", "\\(").Replace(")", "\\)").Replace("-", "\\-").Replace("[", "\\[").Replace("]", "\\]");
-
-    }
+    
     /// <summary>
     /// 是否全部字符都是数字
     /// </summary>
@@ -300,15 +245,7 @@ public static class StringExtensions
     {
         return s.All(c => c >= '0' && c <= '9');
     }
-    /// <summary>
-    /// 修正SQL语句中拼接的字符串
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    public static string FixSqlLikeString(this string s)
-    {
-        return s.RemoveMultipleSpaces().Replace("'", "''").Replace("& &", "&");
-    }
+    
     /// <summary>
     /// 是否以任意后缀结束
     /// </summary>
@@ -326,57 +263,17 @@ public static class StringExtensions
         }
         return false;
     }
-    /// <summary>
-    /// 是否包括任意子字符串
-    /// </summary>
-    /// <param name="s">当前字符串</param>
-    /// <param name="ignoreCase">是否忽略大小写</param>
-    /// <param name="subs">子字符串集合</param>
-    /// <returns></returns>
-    public static bool ContainsAny(this string s, bool ignoreCase = true, params string[] subs)
-    {
-
-        if (s == null || s.Length == 0 || subs == null || subs.Length == 0)
-        {
-            return false;
-        }
-        if (ignoreCase)
-        {
-            s = s.ToLower();
-            return subs.Any(sub => s.Contains(sub.ToLower()));
-        }
-        return subs.Any(sub => s.Contains(sub));
-    }
+    
+    
     /// <summary>
     /// 是否包括任意子字符串
     /// </summary>
     /// <param name="s">当前字符串</param> 
     /// <param name="subs">子字符串集合</param>
     /// <returns></returns>
-    public static bool ContainsAny(this string s, params string[] subs)
+    public static bool ContainsAny(this string s, IEnumerable<string> subs)
     {
-        if (s == null || s.Length == 0 || subs == null || subs.Length == 0)
-        {
-            return false;
-        }
-        foreach (var item in subs)
-        {
-            if (s.AsSpan().Contains(item.AsSpan(), StringComparison.OrdinalIgnoreCase))
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-    /// <summary>
-    /// 是否包括任意子字符串
-    /// </summary>
-    /// <param name="s">当前字符串</param> 
-    /// <param name="subs">子字符串集合</param>
-    /// <returns></returns>
-    public static bool ContainsAny(this string s, List<string> subs)
-    {
-        if (s == null || s.Length == 0 || subs == null || subs.Count == 0)
+        if (s == null || s.Length == 0 || subs == null || subs.Count() == 0)
         {
             return false;
         }
@@ -402,12 +299,19 @@ public static class StringExtensions
         {
             return false;
         }
-        if (ignoreCase)
+        
+        foreach (var item in subs)
         {
-            s = s.ToLower();
-            return subs.All(sub => s.Contains(sub.ToLower()));
+            if (s.AsSpan().Contains(item.AsSpan(), StringComparison.OrdinalIgnoreCase))
+            {
+                 
+            }
+            else
+            {
+                return false;
+            }
         }
-        return subs.All(sub => s.Contains(sub));
+        return true;
     }
     private static bool MatchStart(ReadOnlySpan<char> span, int index, ReadOnlySpan<char> item)
     {
@@ -524,50 +428,8 @@ public static class StringExtensions
         }
         return false;
     }
-    /// <summary>
-    /// 是否包括全部子字符串(自动忽略大小写)
-    /// </summary>
-    /// <param name="s">当前字符串</param>  
-    /// <param name="subs">子字符串集合</param>
-    /// <returns></returns>
-    public static bool ContainsAll(this string s, params string[] subs)
-    {
-        if (s == null || s.Length == 0 || subs == null || subs.Length == 0)
-        {
-            return false;
-        }
-        var span = s.AsSpan();
-        foreach (var item in subs)
-        {
-            if (span.IndexOf(item.AsSpan(), StringComparison.OrdinalIgnoreCase) == -1)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-    /// <summary>
-    /// 是否包括全部子字符串(自动忽略大小写)
-    /// </summary>
-    /// <param name="s">当前字符串</param>  
-    /// <param name="subs">子字符串集合</param>
-    /// <returns></returns>
-    public static bool ContainsAll(this string s, List<string> subs)
-    {
-        if (s == null || s.Length == 0 || subs == null || subs.Count == 0)
-        {
-            return false;
-        }
-        var span = s.AsSpan();
-        foreach (var item in subs)
-        {
-            if (span.IndexOf(item.AsSpan(), StringComparison.OrdinalIgnoreCase) == -1)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
+    
+     
     /// <summary>
     /// 是否按顺序包含子串数组（忽略大小写）
     /// </summary>
@@ -642,43 +504,8 @@ public static class StringExtensions
 
 
 
-    #region 字符串清理函数
-    public static List<string> GetChineseEnglishTokens(this string source, string split = "")
-    {
-        if (source.IsNullOrEmpty())
-        {
-            return new List<string>();
-        }
-        List<string> result = new List<string>();
-        if (split.IsNullOrEmpty())
-        {
-            var chs = source.Where(s => s.ToString().IsChinese()).ToArray();
-
-            for (int i = 0; i < chs.Length; i++)
-            {
-                if (i != chs.Length - 1)
-                {
-                    result.Add(new string(new char[] { chs[i], chs[i + 1] }).ToLower());
-                }
-            }
-            var eng = new string(source.Where(s => s.ToString().IsChinese() == false).ToArray());
-            var splitChars = eng.Where(s => !Regex.IsMatch(s.ToString(), "[a-z0-9\\s]", RegexOptions.IgnoreCase));
-            foreach (var c in splitChars)
-            {
-                eng = eng.Replace(c.ToString(), " ");
-            }
-            result.AddRange(eng.SplitList(" ").Select(d => d.ToLower()));
-        }
-        else
-        {
-            var tokens = source.SplitList(split);
-            foreach (var token in tokens)
-            {
-                result.AddRange(token.GetChineseEnglishTokens());
-            }
-        }
-        return result.Where(r => r.Trim().IsNotNullOrEmpty()).Distinct().ToList();
-    }
+#region 字符串清理函数
+   
 
     private static bool InRange(ReadOnlySpan<char> span, int index, CharRange[] ranges)
     {
@@ -755,31 +582,7 @@ public static class StringExtensions
         }
         return new string(arr, 0, arrIdx);
     }
-    /// <summary>
-    /// 清理字符串，只保留中文英文，同时保留数字
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="toLowerCase">是否转化为小写，默认True</param>
-    /// <returns></returns>
-    public static string ClearTextWithNumber(this string s, bool toLowerCase = true)
-    {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.Length; i++)
-        {
-            if ((s[i] >= 0x4E00 && s[i] <= 0x9FA5) || (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= '0' && s[i] <= '9'))
-            {
-                sb.Append(s[i]);
-            }
-        }
-        if (toLowerCase)
-        {
-            return sb.ToString().ToLower();
-        }
-        else
-        {
-            return sb.ToString();
-        }
-    }
+    
     public static string ClearText(this string s, bool withNumber, bool replaceToSpace)
     {
         if (s.IsNullOrEmpty())
@@ -840,48 +643,7 @@ public static class StringExtensions
         return new string(arr, 0, arrIdx).Trim().ToLower();
 
     }
-    /// <summary>
-    /// 获取纯净字符串（默认只包括中文及英文字符）
-    /// </summary>
-    /// <param name="s"></param>
-    /// <param name="addtionalPattern">除了中文及英文字符以外，需要满足的正则表达式</param>
-    /// <returns></returns>
-    public static string ClearText(this string s, string addtionalPattern = "", bool toLowerCase = false)
-    {
-        if (s.IsNullOrEmpty())
-        {
-            return "";
-        }
-        if (addtionalPattern.IsNotNullOrEmpty())
-        {
-            var r = Regex.Replace(s, $"[^\u4E00-\u9FA5a-zA-Z{addtionalPattern}]", "", RegexOptions.IgnoreCase);
-            if (!toLowerCase)
-            {
-                return r;
-            }
-            return r.ToLower();
-
-        }
-        else
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < s.Length; i++)
-            {
-                if ((s[i] >= 0x4E00 && s[i] <= 0x9FA5) || (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
-                {
-                    sb.Append(s[i]);
-                }
-            }
-            if (toLowerCase)
-            {
-                return sb.ToString().ToLower();
-            }
-            else
-            {
-                return sb.ToString();
-            }
-        }
-    }
+    
     /// <summary>
     /// 将非中文、字母、数字字符替换为空格
     /// </summary>
@@ -1200,9 +962,9 @@ public static class StringExtensions
         return sb.ToString();
     }
 
-    #endregion
+#endregion
 
-    #region 正则表达式操作
+#region 正则表达式操作
 
     /// <summary>
     /// 移除满足正则表达式的的字符串
@@ -1308,7 +1070,7 @@ public static class StringExtensions
         }
         return Regex.IsMatch(s, pattern, options);
     }
-    #endregion
+#endregion
 
 
     public static string AsSpanReplace(this string s, string source, string desc)
@@ -1775,21 +1537,18 @@ public static class StringExtensions
     }
 
 
-    /// <summary>
-    /// 将Bytes转化为16进制字符串
-    /// </summary>
-    /// <param name="input">Byte数组</param>
-    /// <returns></returns>
-    public static string BytesToHexString(this byte[] input)
+    public static string ToHexString(this string input)
     {
-        StringBuilder hexString = new StringBuilder(64);
-
-        for (int i = 0; i < input.Length; i++)
-        {
-            hexString.Append(String.Format("{0:X2}", input[i]));
-        }
-        return hexString.ToString();
+        
+#if NETSTANDARD2_0
+        var bytes = Encoding.UTF8.GetBytes(input);
+        return bytes.ToHexString();
+#endif
+#if NET5_0_OR_GREATER
+        return Convert.ToHexString(input.ToReadOnlySpan());
+#endif
     }
+   
     public static string ToHexString(this byte[] input)
     {
         if (input == null)
@@ -1804,6 +1563,19 @@ public static class StringExtensions
         }
 
         return output.ToString();
+    }
+
+    public static string FromHexString(this string input)
+    {
+
+#if NETSTANDARD2_0
+       var bytes = HexStringToBytes(input);
+       return Encoding.UTF8.GetString(bytes);
+#endif
+#if NET5_0_OR_GREATER
+        var bytes = Convert.FromHexString(input);
+        return Encoding.UTF8.GetString(bytes);
+#endif
     }
     /// <summary>
     /// 将16进制字符串转化为Bytes

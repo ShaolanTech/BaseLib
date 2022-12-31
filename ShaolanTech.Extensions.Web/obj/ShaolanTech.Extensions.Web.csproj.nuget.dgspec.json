@@ -4,15 +4,16 @@
     "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Web\\ShaolanTech.Extensions.Web.csproj": {}
   },
   "projects": {
-    "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj": {
+    "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj",
-        "projectName": "ShaolanTech.BaseModels",
-        "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj",
+        "projectUniqueName": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj",
+        "projectName": "ShaolanTech.App.Hosts",
+        "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\obj\\",
+        "outputPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
@@ -21,6 +22,9 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net5.0",
+          "net6.0",
+          "net7.0",
           "netstandard2.0"
         ],
         "sources": {
@@ -34,6 +38,181 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              }
+            }
+          },
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              }
+            }
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Threading.Channels": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj",
+        "projectName": "ShaolanTech.BaseModels",
+        "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0",
+          "net6.0",
+          "net7.0",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.xuezheku.com/nuget/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-coreclr/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-experimental/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          },
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {}
@@ -46,6 +225,84 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
@@ -54,6 +311,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -80,6 +345,7 @@
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
@@ -88,6 +354,9 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net5.0",
+          "net6.0",
+          "net7.0",
           "netstandard2.0"
         ],
         "sources": {
@@ -101,6 +370,30 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj"
+              }
+            }
+          },
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj"
+              }
+            }
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.BaseModels\\ShaolanTech.BaseModels.csproj"
+              }
+            }
+          },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
@@ -117,6 +410,66 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
@@ -126,13 +479,13 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.2, )"
-            },
             "System.Memory": {
               "target": "Package",
               "version": "[4.5.5, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -159,6 +512,7 @@
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Web\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
@@ -167,6 +521,145 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net6.0",
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.xuezheku.com/nuget/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-coreclr/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-experimental/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj"
+              },
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              },
+              "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj"
+              }
+            }
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.App.Hosts\\ShaolanTech.App.Hosts.csproj"
+              },
+              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
+              },
+              "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj": {
+                "projectPath": "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj",
+        "projectName": "ShaolanTech.Data.LocalConfig",
+        "projectPath": "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\ShaolanTech.Data.LocalConfig.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\work\\ShaolanTech\\DataAccess\\ShaolanTech.Data.LocalConfig\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0",
+          "net6.0",
+          "net7.0",
           "netstandard2.0"
         ],
         "sources": {
@@ -180,13 +673,21 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet7/nuget/v3/index.json": {}
         },
         "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          },
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {
-              "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj": {
-                "projectPath": "F:\\work\\ShaolanTech\\BaseLib\\ShaolanTech.Extensions.Common\\ShaolanTech.Extensions.Common.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -196,24 +697,102 @@
         }
       },
       "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Http.Abstractions": {
+            "LiteDB": {
               "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Razor": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.13, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

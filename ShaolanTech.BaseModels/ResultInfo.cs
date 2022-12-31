@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ShaolanTech.BaseModels
+namespace ShaolanTech
 {
 
     /// <summary>

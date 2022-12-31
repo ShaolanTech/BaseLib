@@ -84,16 +84,7 @@ public static class IEnumerableExtensions
         }
         return result;
     }
-    /// <summary>
-    /// 将数组转化为全文分词字符串
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="source"></param>
-    /// <returns></returns>
-    public static string ToTsVectorString<T>(this IEnumerable<T> source)
-    {
-        return string.Join(" ", source.Select(s => s.ToString().ClearTextWithNumber()));
-    }
+   
     /// <summary>
     /// 当前集合是否为非NULL并且元素数量大于0
     /// </summary>
