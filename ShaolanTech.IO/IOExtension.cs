@@ -1,12 +1,17 @@
 ﻿using System;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Text;
 
 namespace ShaolanTech.IO
 {
     public static class IOExtensions
     {
+        public static void WriteTableRow(this StreamWriter writer,params string[] items)
+        {
+            writer.WriteLine(string.Join("\t",items.Select (i=>string.IsNullOrEmpty(i)?"":i).Select(i=>i.Replace("\t","").Replace("\r","").Replace("\n",""))));
+        }
         /// <summary>
         /// 使用Deflate压缩字符串
         /// </summary>
